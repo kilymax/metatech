@@ -1,0 +1,34 @@
+@use '../helpers/' as *;
+
+.team {
+    --presonAvatarSize: #{rem(60)};
+
+    display: flex;
+    padding: rem(10);
+    background-color: var(--color-dark-10);
+    border-radius: rem(100);
+
+    @include laptop {
+        --presonAvatarSize: #{rem(50)};
+        padding: rem(8);
+    }
+
+    @include tablet {
+        --presonAvatarSize: #{rem(40)};
+    }
+
+    &__person {
+        width: var(--presonAvatarSize);
+        border-radius: 50%;
+        border: 2px solid var(--color-dark-40);
+        background-color: var(--color-dark-15);
+
+        @include laptop {
+            border-width: 1px;
+        }
+
+        &:not(:first-child) {
+            margin-left: calc(var(--presonAvatarSize) * 0.25 * -1);
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@use '../helpers/' as *;
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    column-gap: rem(10);
+
+    &::after {
+        --size: #{rem(13.75)};
+        
+        @include square(var(--size));
+
+        @include laptop-above {
+            --size: #{rem(16.5)};
+        }
+
+        content: '';
+        flex-shrink: 0;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &--yellow-arrow {
+        &::after {
+            background-image: url('../../images/icons/top-right-arrow_yellow.svg');
+        }
+    }
+}

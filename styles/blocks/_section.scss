@@ -1,0 +1,17 @@
+@use '../helpers/' as *;
+
+.section {
+    &__header {
+        background-color: var(--color-dark-10);
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            row-gap: fluid(16, 10);
+        }
+
+        &-inner {
+            padding-block: fluid(120, 40);
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@use '../helpers/' as *;
+
+.card {
+    display: grid;
+    grid-template-columns: 40% auto;
+
+    &__preview {
+        padding-block: fluid(80, 60);
+        padding-right: fluid(80, 60);
+        margin-block: auto;
+
+        &-main {
+            display: flex;
+            flex-direction: column;
+            gap: fluid(50, 20);
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            gap: fluid(16, 6);
+        }
+    }
+
+    &__body {
+        border-left: var(--border);
+        padding: fluid(80, 60);
+    }
+
+    &__grid {
+        display: grid;
+        gap: fluid(30, 10);
+
+
+        &--2-cols {
+            grid-template-columns: repeat(2, 1fr);
+
+            @include tablet {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    &__cell {
+        display: flex;
+        flex-direction: column;
+        row-gap: fluid(20, 4);
+        padding: fluid(40, 24);
+
+        &-description {
+            @include fluid-text(18, 14);
+        }
+    }
+}

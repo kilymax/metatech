@@ -1,4 +1,4 @@
-# Adaptive MetaTech website project 
+# Adaptive MetaTech website project
 
 <a name="readme-top"></a>
 
@@ -9,6 +9,7 @@
     <img src="/images/logo.svg" alt="Positivus Logo" width="150" >
   </a>
 </div>
+<br/>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -24,9 +25,8 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 Adaptive layout using HTML, preprocessor SCSS according to the BEM methodology and JavaScript.
@@ -35,20 +35,20 @@ Adaptive layout using HTML, preprocessor SCSS according to the BEM methodology a
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-
 ### Built With
 
-* HTML
-* CSS (SCSS) + BEM
-* JavaScript
+- HTML
+- CSS (SCSS) + BEM
+- JavaScript
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 You can also open an already running application using Pages - [MetaTech]()
+
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-
 <!-- CONTACT -->
+
 ## Contact
 
 Ilya K - [Telegram](https://t.me/leoncox) - leon.coxsw@gmail.com

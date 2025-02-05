@@ -1,0 +1,31 @@
+@use "../helpers/" as *;
+
+.person-card {
+  display: flex;
+  align-items: center;
+  column-gap: rem(10);
+
+  @include mobile {
+    column-gap: rem(6);
+  }
+
+  &__image {
+    width: rem(80);
+    border-radius: 50%;
+    background-color: var(--color-dark-15);
+
+    @include laptop {
+      width: rem(60);
+    }
+  }
+
+  &__body {
+    @include laptop-above {
+      row-gap: rem(2);
+    }
+  }
+
+  &__department {
+    line-height: 1;
+  }
+}

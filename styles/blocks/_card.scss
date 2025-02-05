@@ -1,54 +1,64 @@
-@use '../helpers/' as *;
+@use "../helpers/" as *;
 
 .card {
+  @include tablet-above {
     display: grid;
     grid-template-columns: 40% auto;
+  }
 
-    &__preview {
-        padding-block: fluid(80, 60);
-        padding-right: fluid(80, 60);
-        margin-block: auto;
+  &__preview {
+    padding-right: fluid(80, 60);
+    margin-block: auto;
 
-        &-main {
-            display: flex;
-            flex-direction: column;
-            gap: fluid(50, 20);
-        }
-
-        &-info {
-            display: flex;
-            flex-direction: column;
-            gap: fluid(16, 6);
-        }
+    &-main {
+      display: flex;
+      flex-direction: column;
+      gap: fluid(50, 20);
     }
 
-    &__body {
-        border-left: var(--border);
-        padding: fluid(80, 60);
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: fluid(16, 6);
     }
 
-    &__grid {
-        display: grid;
-        gap: fluid(30, 10);
-
-
-        &--2-cols {
-            grid-template-columns: repeat(2, 1fr);
-
-            @include tablet {
-                grid-template-columns: 1fr;
-            }
-        }
+    @include tablet {
+      border-bottom: var(--border);
+      padding-block: rem(50);
     }
+  }
 
-    &__cell {
-        display: flex;
-        flex-direction: column;
-        row-gap: fluid(20, 4);
-        padding: fluid(40, 24);
+  &__body {
+    padding: rem(30) rem(16);
 
-        &-description {
-            @include fluid-text(18, 14);
-        }
+    @include tablet-above {
+      padding: fluid(80, 60);
+      border-left: var(--border);
     }
+  }
+
+  &__grid {
+    display: grid;
+    gap: fluid(30, 10);
+
+    &--2-cols {
+      grid-template-columns: repeat(2, 1fr);
+
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  &__cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: fluid(20, 4);
+    padding: fluid(40, 24);
+
+    &-description {
+      @include fluid-text(18, 14);
+    }
+  }
 }

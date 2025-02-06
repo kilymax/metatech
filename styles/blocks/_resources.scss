@@ -3,17 +3,39 @@
 .resources {
   &__card {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 42% 58%;
+
+    @include tablet {
+      grid-template-columns: 100%;
+    }
+
+    &:not(:first-child) {
+      border-top: var(--border);
+    }
   }
 
   &__preview {
     display: flex;
     flex-direction: column;
+    align-items: start;
     row-gap: fluid(60, 20);
     padding-block: fluid(80, 40);
+    border-right: var(--border);
     padding-right: rem(80);
     margin-right: rem(80);
-    border-right: var(--border);
+    justify-content: center;
+
+    @include laptop {
+      padding-right: rem(60);
+      margin-right: rem(60);
+    }
+
+    @include tablet {
+      padding-right: 0;
+      margin-right: 0;
+      border-right: none;
+      align-items: initial;
+    }
 
     &-main {
       display: flex;
@@ -38,15 +60,34 @@
       gap: rem(24) rem(16);
     }
 
+    @include mobile {
+      grid-template-columns: 100%;
+      padding-block: rem(40);
+      border-top: var(--border);
+    }
+
     &-header {
-      display: flex;
-      column-gap: rem(20);
-      grid-column: -1 / 1;
+      align-self: center;
+    }
+
+    &-ratio {
+      margin-left: rem(30);
+
+      @include laptop {
+        margin-left: rem(24);
+      }
+
+      @include mobile {
+        margin-left: 0;
+      }
     }
 
     &-image {
       border-radius: rem(12);
       grid-column: -1 / 1;
+      width: 100%;
+      height: rem(332);
+      object-fit: cover;
     }
 
     &-total {
@@ -61,21 +102,19 @@
     &-formats {
       display: flex;
       justify-content: space-between;
-      &-info {
-        display: flex;
-        flex-direction: column;
-      }
     }
   }
 
   &__download {
     display: flex;
     justify-content: space-between;
-    column-gap: fluid(50, 31);
+    column-gap: rem(20);
     padding: rem(30);
+    font-size: rem(18);
 
     @include laptop {
-      padding: rem(20);
+      padding: rem(12);
+      font-size: rem(14);
     }
 
     &-link {
@@ -91,19 +130,13 @@
     }
 
     &-images {
-      --presonAvatarSize: #{rem(50)};
-      background-color: var(--color-dark);
-      padding: rem(10);
-      border-radius: rem(12);
+      display: flex;
+      align-items: center;
+    }
 
-      img {
-        aspect-ratio: 1;
-      }
-
-      @include laptop {
-        --presonAvatarSize: #{rem(40)};
-        padding: rem(8);
-      }
+    &-count {
+      font-weight: 600;
+      color: var(--color-light);
     }
   }
 }

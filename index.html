@@ -17,7 +17,7 @@
       <div class="header__promo">
         <div class="header__promo-inner container">
           <a href="/" class="header__promo-link">
-            <span class="icon icon--yellow-arrow"
+            <span class="icon icon--arrow"
               >Подпишитесь на нашу рассылку, чтобы получать последние блоги и
               ресурсы</span
             >
@@ -155,7 +155,7 @@
                 прорывах.
               </p>
               <a href="/" class="resources-preview__button button">
-                <span class="icon icon--yellow-arrow">Ресурсы</span>
+                <span class="icon icon--arrow">Ресурсы</span>
               </a>
             </div>
           </div>
@@ -375,7 +375,7 @@
               </h2>
             </div>
             <a href="/" class="section__link button">
-              <span class="icon icon--yellow-arrow">Все блоги</span>
+              <span class="icon icon--arrow">Все блоги</span>
             </a>
           </div>
         </header>
@@ -591,7 +591,7 @@
                       </div>
                     </div>
                     <a href="/" class="blog-card__link button">
-                      <span class="icon icon--yellow-arrow">Читать блог</span>
+                      <span class="icon icon--arrow">Читать блог</span>
                     </a>
                   </article>
                 </li>
@@ -711,7 +711,7 @@
                       </div>
                     </div>
                     <a href="/" class="blog-card__link button">
-                      <span class="icon icon--yellow-arrow">Читать блог</span>
+                      <span class="icon icon--arrow">Читать блог</span>
                     </a>
                   </article>
                 </li>
@@ -834,7 +834,7 @@
                       </div>
                     </div>
                     <a href="/" class="blog-card__link button">
-                      <span class="icon icon--yellow-arrow">Читать блог</span>
+                      <span class="icon icon--arrow">Читать блог</span>
                     </a>
                   </article>
                 </li>
@@ -911,7 +911,7 @@
               </h2>
             </div>
             <a href="/" class="section__link button">
-              <span class="icon icon--yellow-arrow">Все ресурсы</span>
+              <span class="icon icon--arrow">Все ресурсы</span>
             </a>
           </div>
         </header>
@@ -936,9 +936,7 @@
                   </div>
                 </div>
                 <a href="/" class="resources__download-link button">
-                  <span class="icon icon--yellow-arrow"
-                    >Загрузите электронные книги сейчас</span
-                  >
+                  <span class="icon icon--arrow">Скачать книги</span>
                 </a>
               </div>
               <div class="resources__download tile">
@@ -951,32 +949,32 @@
                     src="./images/icons/person1.png"
                     alt=""
                     class="team__person"
-                    width="60"
-                    height="60"
+                    width="50"
+                    height="50"
                     loading="lazy"
                   />
                   <img
                     src="./images/icons/person2.png"
                     alt=""
                     class="team__person"
-                    width="60"
-                    height="60"
+                    width="50"
+                    height="50"
                     loading="lazy"
                   />
                   <img
                     src="./images/icons/person3.png"
                     alt=""
                     class="team__person"
-                    width="60"
-                    height="60"
+                    width="50"
+                    height="50"
                     loading="lazy"
                   />
                   <img
                     src="./images/icons/person4.png"
                     alt=""
                     class="team__person"
-                    width="60"
-                    height="60"
+                    width="50"
+                    height="50"
                     loading="lazy"
                   />
                 </div>
@@ -985,12 +983,12 @@
             <div class="resources__body">
               <div class="resources__body-header">
                 <h4 class="resources__body-title">Разнообразие тем</h4>
-                <p class="resources__body-ratio">
-                  Темы включают ИИ в образовании (25%), возобновляемые источники
-                  энергии (20%), здравоохранение (15%), здоровье (25%) и
-                  биотехнологии (15%).
-                </p>
               </div>
+              <p class="resources__body-ratio">
+                Темы включают ИИ в образовании (25%), возобновляемые источники
+                энергии (20%), здравоохранение (15%), здоровье (25%) и
+                биотехнологии (15%).
+              </p>
               <img
                 src="./images/resources/body-image-1.jpg"
                 width="917"
@@ -999,32 +997,142 @@
                 class="resources__body-image"
                 loading="lazy"
               />
-              <div class="resources__body-total tile">
-                <span class="resources__body-total-title">Всего книг</span>
-                <span class="resources__body-total-count"
+              <div class="resources__body-total resources-tile">
+                <span class="resources-tile__title">Всего книг</span>
+                <span class="resources-tile__description"
                   >Более 100 эл. книг</span
                 >
               </div>
-              <div class="resources__body-formats tile">
-                <div class="resources__body-formats-info">
-                  <span class="resources__body-formats-title"
+              <div class="resources__body-formats resources-tile">
+                <div class="resources-tile__info">
+                  <span class="resources-tile__title"
                     >Форматы для скачивания</span
                   >
-                  <span class="resources__body-formats-description"
+                  <span class="resources-tile__description"
                     >Формат высокой доступности PDF</span
                   >
                 </div>
-                <a
-                  href="/"
-                  class="resources__body-formats-preview-button button"
-                  >Предпросмотр</a
-                >
+                <a href="/" class="resources-tile__button button">
+                  <span class="icon icon--eye">Предпросмотр</span>
+                </a>
               </div>
-              <div class="resources__body-expertise tile">
-                <span class="resources__body-expertise-title"
+              <div class="resources__body-expertise resources-tile">
+                <span class="resources-tile__title"
                   >Средний уровень экспертизы автора</span
                 >
-                <span class="resources__body-expertise-description"
+                <span class="resources-tile__description"
+                  >Авторами электронных книг являются известные эксперты со
+                  средним опытом работы 15 лет.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="resources__card container">
+            <div class="resources__preview">
+              <div class="resources__preview-main">
+                <img
+                  src="./images/resources/2.svg"
+                  width="80"
+                  height="80"
+                  alt=""
+                  loading="lazy"
+                />
+                <div class="resources__preview-info">
+                  <h3 class="resources__preview-title">Научные статьи</h3>
+                  <div class="resources__preview-description">
+                    <p>
+                      Погрузитесь в комплексные отчеты и анализы с помощью нашей
+                      коллекции технических документов.
+                    </p>
+                  </div>
+                </div>
+                <a href="/" class="resources__download-link button">
+                  <span class="icon icon--arrow">Скачать статьи</span>
+                </a>
+              </div>
+              <div class="resources__download tile">
+                <div class="resources__download-info">
+                  <span class="resources__download-by">Скачиваний</span>
+                  <span class="resources__download-count">10тыс+</span>
+                </div>
+                <div class="resources__download-images team">
+                  <img
+                    src="./images/icons/person3.png"
+                    alt=""
+                    class="team__person"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                  />
+                  <img
+                    src="./images/icons/person1.png"
+                    alt=""
+                    class="team__person"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                  />
+                  <img
+                    src="./images/icons/person4.png"
+                    alt=""
+                    class="team__person"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                  />
+                  <img
+                    src="./images/icons/person2.png"
+                    alt=""
+                    class="team__person"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="resources__body">
+              <div class="resources__body-header">
+                <h4 class="resources__body-title">Освещение тем</h4>
+              </div>
+              <p class="resources__body-ratio">
+                Технические документы охватывают квантовые вычисления (20%),
+                этику ИИ (15%), перспективы добычи полезных ископаемых в космосе
+                (20%), ИИ в здравоохранении (15%) и стратегии возобновляемой
+                энергетики (30%).
+              </p>
+              <img
+                src="./images/resources/body-image-2.jpg"
+                width="917"
+                height="332"
+                alt="люди в VR-очках"
+                class="resources__body-image"
+                loading="lazy"
+              />
+              <div class="resources__body-total resources-tile">
+                <span class="resources-tile__title">Всего книг</span>
+                <span class="resources-tile__description"
+                  >Более 100 эл. книг</span
+                >
+              </div>
+              <div class="resources__body-formats resources-tile">
+                <div class="resources-tile__info">
+                  <span class="resources-tile__title"
+                    >Форматы для скачивания</span
+                  >
+                  <span class="resources-tile__description"
+                    >Формат высокой доступности PDF</span
+                  >
+                </div>
+                <a href="/" class="resources-tile__button button">
+                  <span class="icon icon--eye">Предпросмотр</span>
+                </a>
+              </div>
+              <div class="resources__body-expertise resources-tile">
+                <span class="resources-tile__title"
+                  >Средний уровень экспертизы автора</span
+                >
+                <span class="resources-tile__description"
                   >Авторами технических документов являются эксперты в данной
                   области, имеющие в среднем 20-летний опыт работы.</span
                 >
@@ -1135,24 +1243,22 @@
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link button">
-                    <span class="icon icon--yellow-arrow">Статьи</span>
+                    <span class="icon icon--arrow">Статьи</span>
                   </a>
                 </li>
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link button">
-                    <span class="icon icon--yellow-arrow"
-                      >Электронные книги</span
-                    >
+                    <span class="icon icon--arrow">Электронные книги</span>
                   </a>
                 </li>
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link button">
-                    <span class="icon icon--yellow-arrow">Отчеты</span>
+                    <span class="icon icon--arrow">Отчеты</span>
                   </a>
                 </li>
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link button">
-                    <span class="icon icon--yellow-arrow"
+                    <span class="icon icon--arrow"
                       >Исследовательские работы</span
                     >
                   </a>

@@ -1,29 +1,36 @@
-@use '../helpers/' as *;
+@use "../helpers/" as *;
 
 .icon {
-    display: inline-flex;
-    align-items: center;
-    column-gap: rem(10);
+  display: inline-flex;
+  align-items: center;
+  column-gap: rem(10);
 
+  &::after {
+    --size: #{rem(13.75)};
+
+    @include square(var(--size));
+
+    @include laptop-above {
+      --size: #{rem(16.5)};
+    }
+
+    content: "";
+    flex-shrink: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--arrow {
     &::after {
-        --size: #{rem(13.75)};
-        
-        @include square(var(--size));
-
-        @include laptop-above {
-            --size: #{rem(16.5)};
-        }
-
-        content: '';
-        flex-shrink: 0;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
+      background-image: url("../../images/icons/top-right-arrow_yellow.svg");
     }
+  }
 
-    &--yellow-arrow {
-        &::after {
-            background-image: url('../../images/icons/top-right-arrow_yellow.svg');
-        }
+  &--eye {
+    &::after {
+      background-image: url("../../images/icons/eye.svg");
+      @include square(rem(16.5));
     }
+  }
 }

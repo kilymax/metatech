@@ -20,9 +20,9 @@
   }
 
   &__body {
-    @include laptop-above {
-      row-gap: rem(2);
-    }
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(6);
   }
 
   &__department {

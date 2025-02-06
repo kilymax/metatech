@@ -1,0 +1,39 @@
+@use "../helpers/" as *;
+
+.resources-tile {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-dark-10);
+  border-radius: fluid(12, 8);
+  border: var(--border);
+  padding: fluid(30, 20);
+  row-gap: rem(2);
+
+  @include laptop-above {
+    row-gap: rem(4);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: var(--color-grey-60);
+
+    @include fluid-text(18, 14);
+  }
+
+  &__description {
+    font-weight: 500;
+    color: var(--color-light);
+    @include fluid-text(20, 16);
+  }
+}
+
+.resources-tile:has(.resources-tile__button) {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(10);
+}

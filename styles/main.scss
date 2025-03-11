@@ -28,6 +28,10 @@
 @use "./blocks/blog-card";
 @use "./blocks/resources";
 @use "./blocks/resources-tile";
+@use "./blocks/bordered-grid";
+@use "./blocks/rating-view";
+@use "./blocks/review-card";
+@use "./blocks/about";
 
 .header,
 .footer {

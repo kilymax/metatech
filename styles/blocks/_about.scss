@@ -1,0 +1,84 @@
+@use "../helpers/" as *;
+
+.about {
+  padding-block: fluid(120, 40);
+  background-color: var(--color-dark-10);
+
+  &__icon {
+    align-self: center;
+    grid-area: icon;
+    width: fluid(150, 60);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(100, 40);
+  }
+
+  &__subtitle {
+    align-self: center;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "icon tag"
+      "icon info";
+    column-gap: fluid(80, 20);
+    row-gap: rem(20);
+
+    @include tablet {
+      grid-template-areas:
+        "icon tag"
+        "info info";
+    }
+
+    &-info {
+      display: flex;
+      grid-area: info;
+      flex-direction: column;
+      row-gap: fluid(30, 4);
+    }
+  }
+
+  &__list {
+    --gapSize: #{rem(20)};
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gapSize);
+    background-color: var(--color-dark);
+    border-radius: rem(12);
+    padding: var(--gapSize);
+
+    @include laptop {
+      --gapSize: #{rem(10)};
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(20, 10);
+    height: 100%;
+
+    @include hover {
+      background-color: var(--color-dark-20);
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+
+      @include fluid-text(22, 16);
+
+      font-family: var(--font-family-base);
+      font-weight: 600;
+    }
+  }
+}

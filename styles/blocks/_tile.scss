@@ -1,6 +1,7 @@
 @use '../helpers/' as *;
 
 .tile {
+    padding: fluid(40, 24);
     background-color: var(--color-dark-10);
     border-radius: fluid(12, 8);
     border: var(--border);

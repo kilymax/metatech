@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="icon" type="image/svg+xml" href="/images/icons/logo-icon.svg" />
+    <title>Технологии будущего | Новости</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/main.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <header class="header" data-js-header>
+      <div class="header__promo">
+        <div class="header__promo-inner container">
+          <a href="/" class="header__promo-link">
+            <span class="icon icon--arrow"
+              >Подпишитесь на нашу рассылку, чтобы получать последние блоги и
+              ресурсы</span
+            >
+          </a>
+        </div>
+      </div>
+      <div class="header__body">
+        <div class="header__body-inner container">
+          <a
+            href="./index.html"
+            class="header__logo logo"
+            aria-label="Home"
+            title="Home"
+          >
+            <img
+              src="./images/logo.svg"
+              alt=""
+              width="179"
+              height="50"
+              class="logo__image"
+              loading="lazy"
+            />
+          </a>
+          <div class="header__overlay" data-js-header-overlay>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="./index.html" class="header__menu-link">Главная</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="./news.html" class="header__menu-link is-active"
+                    >Новости</a
+                  >
+                </li>
+                <li class="header__menu-item">
+                  <a href="./podcasts.html" class="header__menu-link"
+                    >Подкаксты</a
+                  >
+                </li>
+                <li class="header__menu-item">
+                  <a href="./resources.html" class="header__menu-link"
+                    >Ресурсы</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <a
+              href="./contacts.html"
+              class="header__contact-us-link button button--accent"
+              >Связаться с нами</a
+            >
+          </div>
+          <button
+            class="header__burger-button burger-button visible-mobile"
+            aria-label="Open menu"
+            title="Open menu"
+            data-js-header-burger-button
+          >
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-alt" aria-labelledby="news-title">
+        <header class="hero-alt__header">
+          <div class="hero-alt__header-inner container">
+            <h1 class="hero-alt__title" id="news-title">
+              Сегодняшние заголовки: Оставайтесь
+              <span class="hero-alt__title-hidden-part">Информированным</span>
+            </h1>
+            <p class="hero-alt__subtitle h1 hidden-mobile" aria-hidden="true">
+              Информированным
+            </p>
+            <p class="hero-alt__description">
+              Узнайте последние новости со всего мира. Мы предоставим вам самую
+              свежую информацию о самых значимых событиях, тенденциях и
+              историях. Откройте для себя мир с помощью наших новостных
+              репортажей.
+            </p>
+          </div>
+        </header>
+        <div class="hero-alt__body">
+          <ul class="list">
+            <li class="list__item">
+              <article class="news-card container">
+                <img
+                  src="./images/news/1.jpg"
+                  width="515"
+                  height="427"
+                  alt=""
+                  class="news-card__image"
+                  loading="lazy"
+                />
+                <div class="news-card__body">
+                  <h2 class="news-card__title">
+                    Глобальный климатический саммит рассматривает неотложные
+                    меры по борьбе с изменением климата
+                  </h2>
+                  <div class="news-card__description">
+                    <p>
+                      Мировые лидеры собрались на Глобальном климатическом
+                      саммите, чтобы обсудить неотложные меры по борьбе с
+                      изменением климата, сокращение выбросов и цели в области
+                      возобновляемых источников энергии.
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card__summary summary">
+                  <dl class="summary__list">
+                    <div class="summary__item">
+                      <dt class="summary__key">Категория</dt>
+                      <dd class="summary__value">Окружающая среда</dd>
+                    </div>
+                    <div class="summary__item">
+                      <dt class="summary__key">Дата публикации</dt>
+                      <dd class="summary__value">
+                        <time datetime="2023-10-10">10 октября, 2023</time>
+                      </dd>
+                    </div>
+                    <div class="summary__item">
+                      <dt class="summary__key">Автор</dt>
+                      <dd class="summary__value">Джейн Смит</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="news-card__controls">
+                  <div class="news-card__actions blog-actions">
+                    <ul class="blog-actions__list">
+                      <li class="blog-actions__item">
+                        <button
+                          class="blog-actions__button"
+                          type="button"
+                          aria-label="Like"
+                          title="Like"
+                        >
+                          <span class="blog-actions__icon-wrapper">
+                            <svg
+                              width="22"
+                              height="21"
+                              viewBox="0 0 22 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10.645 19.4107L10.6384 19.4071L10.6158 19.3949C10.5965 19.3844 10.5689 19.3693 10.5336 19.3496C10.4629 19.3101 10.3612 19.2524 10.233 19.1769C9.9765 19.0261 9.61317 18.8039 9.17855 18.515C8.31074 17.9381 7.15122 17.0901 5.9886 16.0063C3.68781 13.8615 1.25 10.6751 1.25 6.75C1.25 3.82194 3.7136 1.5 6.6875 1.5C8.43638 1.5 10.0023 2.29909 11 3.5516C11.9977 2.29909 13.5636 1.5 15.3125 1.5C18.2864 1.5 20.75 3.82194 20.75 6.75C20.75 10.6751 18.3122 13.8615 16.0114 16.0063C14.8488 17.0901 13.6893 17.9381 12.8215 18.515C12.3868 18.8039 12.0235 19.0261 11.767 19.1769C11.6388 19.2524 11.5371 19.3101 11.4664 19.3496C11.4311 19.3693 11.4035 19.3844 11.3842 19.3949L11.3616 19.4071L11.355 19.4107L11.3523 19.4121C11.1323 19.5289 10.8677 19.5289 10.6477 19.4121L10.645 19.4107Z"
+                                stroke="#666666"
+                                stroke-width="1.5"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <span>14тыс</span>
+                        </button>
+                      </li>
+                      <li class="blog-actions__item">
+                        <button
+                          class="blog-actions__button"
+                          type="button"
+                          aria-label="Share"
+                          title="Share"
+                        >
+                          <span class="blog-actions__icon-wrapper">
+                            <svg
+                              width="20"
+                              height="19"
+                              viewBox="0 0 20 19"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.03841 11.4616L2.1719 8.79505C1.36454 8.42807 1.39898 7.2697 2.22673 6.95134L16.8999 1.30781C17.7087 0.996752 18.5033 1.79139 18.1922 2.60013L12.5487 17.2733C12.2303 18.1011 11.072 18.1355 10.705 17.3281L8.03841 11.4616ZM8.03841 11.4616L12.4231 7.07704"
+                                stroke="#666666"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          <span>204</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="/" class="news-card__link button">Читать</a>
+                </div>
+              </article>
+            </li>
+            <li class="list__item">
+              <div class="news container">
+                <ul class="news__list">
+                  <li class="news__item">
+                    <article class="news-card">
+                      <img
+                        src="./images/news/2.jpg"
+                        width="512"
+                        height="222"
+                        alt=""
+                        class="news-card__image"
+                        loading="lazy"
+                      />
+                      <div class="news-card__body">
+                        <h2 class="news-card__title h6">
+                          Решительная победа прогрессивной политики
+                        </h2>
+                        <div class="news-card__description">
+                          <p>Политика</p>
+                        </div>
+                      </div>
+                      <div class="news-card__controls">
+                        <div class="news-card__actions blog-actions">
+                          <ul class="blog-actions__list">
+                            <li class="blog-actions__item">
+                              <button
+                                class="blog-actions__button"
+                                type="button"
+                                aria-label="Like"
+                                title="Like"
+                              >
+                                <span class="blog-actions__icon-wrapper">
+                                  <svg
+                                    width="22"
+                                    height="21"
+                                    viewBox="0 0 22 21"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M10.645 19.4107L10.6384 19.4071L10.6158 19.3949C10.5965 19.3844 10.5689 19.3693 10.5336 19.3496C10.4629 19.3101 10.3612 19.2524 10.233 19.1769C9.9765 19.0261 9.61317 18.8039 9.17855 18.515C8.31074 17.9381 7.15122 17.0901 5.9886 16.0063C3.68781 13.8615 1.25 10.6751 1.25 6.75C1.25 3.82194 3.7136 1.5 6.6875 1.5C8.43638 1.5 10.0023 2.29909 11 3.5516C11.9977 2.29909 13.5636 1.5 15.3125 1.5C18.2864 1.5 20.75 3.82194 20.75 6.75C20.75 10.6751 18.3122 13.8615 16.0114 16.0063C14.8488 17.0901 13.6893 17.9381 12.8215 18.515C12.3868 18.8039 12.0235 19.0261 11.767 19.1769C11.6388 19.2524 11.5371 19.3101 11.4664 19.3496C11.4311 19.3693 11.4035 19.3844 11.3842 19.3949L11.3616 19.4071L11.355 19.4107L11.3523 19.4121C11.1323 19.5289 10.8677 19.5289 10.6477 19.4121L10.645 19.4107Z"
+                                      stroke="#666666"
+                                      stroke-width="1.5"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </span>
+                                <span>14тыс</span>
+                              </button>
+                            </li>
+                            <li class="blog-actions__item">
+                              <button
+                                class="blog-actions__button"
+                                type="button"
+                                aria-label="Share"
+                                title="Share"
+                              >
+                                <span class="blog-actions__icon-wrapper">
+                                  <svg
+                                    width="20"
+                                    height="19"
+                                    viewBox="0 0 20 19"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M8.03841 11.4616L2.1719 8.79505C1.36454 8.42807 1.39898 7.2697 2.22673 6.95134L16.8999 1.30781C17.7087 0.996752 18.5033 1.79139 18.1922 2.60013L12.5487 17.2733C12.2303 18.1011 11.072 18.1355 10.705 17.3281L8.03841 11.4616ZM8.03841 11.4616L12.4231 7.07704"
+                                      stroke="#666666"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </span>
+                                <span>204</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="/" class="news-card__link button">
+                          <span class="icon icon--arrow">
+                            Читать
+                          </span>
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="news__item">
+                    <article class="news-card">
+                      <img
+                        src="./images/news/3.jpg"
+                        width="512"
+                        height="222"
+                        alt=""
+                        class="news-card__image"
+                        loading="lazy"
+                      />
+                      <div class="news-card__body">
+                        <h2 class="news-card__title h6">
+                          Технологические гиганты представляют передовые инновации в области искусственного интеллекта
+                        </h2>
+                        <div class="news-card__description">
+                          <p>Технологии</p>
+                        </div>
+                      </div>
+                      <div class="news-card__controls">
+                        <div class="news-card__actions blog-actions">
+                          <ul class="blog-actions__list">
+                            <li class="blog-actions__item">
+                              <button
+                                class="blog-actions__button"
+                                type="button"
+                                aria-label="Like"
+                                title="Like"
+                              >
+                                <span class="blog-actions__icon-wrapper">
+                                  <svg
+                                    width="22"
+                                    height="21"
+                                    viewBox="0 0 22 21"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M10.645 19.4107L10.6384 19.4071L10.6158 19.3949C10.5965 19.3844 10.5689 19.3693 10.5336 19.3496C10.4629 19.3101 10.3612 19.2524 10.233 19.1769C9.9765 19.0261 9.61317 18.8039 9.17855 18.515C8.31074 17.9381 7.15122 17.0901 5.9886 16.0063C3.68781 13.8615 1.25 10.6751 1.25 6.75C1.25 3.82194 3.7136 1.5 6.6875 1.5C8.43638 1.5 10.0023 2.29909 11 3.5516C11.9977 2.29909 13.5636 1.5 15.3125 1.5C18.2864 1.5 20.75 3.82194 20.75 6.75C20.75 10.6751 18.3122 13.8615 16.0114 16.0063C14.8488 17.0901 13.6893 17.9381 12.8215 18.515C12.3868 18.8039 12.0235 19.0261 11.767 19.1769C11.6388 19.2524 11.5371 19.3101 11.4664 19.3496C11.4311 19.3693 11.4035 19.3844 11.3842 19.3949L11.3616 19.4071L11.355 19.4107L11.3523 19.4121C11.1323 19.5289 10.8677 19.5289 10.6477 19.4121L10.645 19.4107Z"
+                                      stroke="#666666"
+                                      stroke-width="1.5"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </span>
+                                <span>7тыс</span>
+                              </button>
+                            </li>
+                            <li class="blog-actions__item">
+                              <button
+                                class="blog-actions__button"
+                                type="button"
+                                aria-label="Share"
+                                title="Share"
+                              >
+                                <span class="blog-actions__icon-wrapper">
+                                  <svg
+                                    width="20"
+                                    height="19"
+                                    viewBox="0 0 20 19"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M8.03841 11.4616L2.1719 8.79505C1.36454 8.42807 1.39898 7.2697 2.22673 6.95134L16.8999 1.30781C17.7087 0.996752 18.5033 1.79139 18.1922 2.60013L12.5487 17.2733C12.2303 18.1011 11.072 18.1355 10.705 17.3281L8.03841 11.4616ZM8.03841 11.4616L12.4231 7.07704"
+                                      stroke="#666666"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </span>
+                                <span>92</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="/" class="news-card__link button">
+                          <span class="icon icon--arrow">
+                            Читать
+                          </span>
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="news__item">
+                    <article class="news-card">
+                      <img
+                        src="./images/news/4.jpg"
+                        width="512"
+                        height="222"
+                        alt=""
+                        class="news-card__image"
+                        loading="lazy"
+                      />
+                      <div class="news-card__body">
+                        <h2 class="news-card__title h6">
+                          Варианты COVID-19
+                        </h2>
+                        <div class="news-card__description">
+                          <p>Здоровье</p>
+                        </div>
+                      </div>
+                      <div class="news-card__controls">
+                        <div class="news-card__actions blog-actions">
+                          <ul class="blog-actions__list">
+                            <li class="blog-actions__item">
+                              <button
+                                class="blog-actions__button"
+                                type="button"
+                                aria-label="Like"
+                                title="Like"
+                              >
+                                <span class="blog-actions__icon-wrapper">
+                                  <svg
+                                    width="22"
+                                    height="21"
+                                    viewBox="0 0 22 21"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M10.645 19.4107L10.6384 19.4071L10.6158 19.3949C10.5965 19.3844 10.5689 19.3693 10.5336 19.3496C10.4629 19.3101 10.3612 19.2524 10.233 19.1769C9.9765 19.0261 9.61317 18.8039 9.17855 18.515C8.31074 17.9381 7.15122 17.0901 5.9886 16.0063C3.68781 13.8615 1.25 10.6751 1.25 6.75C1.25 3.82194 3.7136 1.5 6.6875 1.5C8.43638 1.5 10.0023 2.29909 11 3.5516C11.9977 2.29909 13.5636 1.5 15.3125 1.5C18.2864 1.5 20.75 3.82194 20.75 6.75C20.75 10.6751 18.3122 13.8615 16.0114 16.0063C14.8488 17.0901 13.6893 17.9381 12.8215 18.515C12.3868 18.8039 12.0235 19.0261 11.767 19.1769C11.6388 19.2524 11.5371 19.3101 11.4664 19.3496C11.4311 19.3693 11.4035 19.3844 11.3842 19.3949L11.3616 19.4071L11.355 19.4107L11.3523 19.4121C11.1323 19.5289 10.8677 19.5289 10.6477 19.4121L10.645 19.4107Z"
+                                      stroke="#666666"
+                                      stroke-width="1.5"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </span>
+                                <span>10тыс</span>
+                              </button>
+                            </li>
+                            <li class="blog-actions__item">
+                              <button
+                                class="blog-actions__button"
+                                type="button"
+                                aria-label="Share"
+                                title="Share"
+                              >
+                                <span class="blog-actions__icon-wrapper">
+                                  <svg
+                                    width="20"
+                                    height="19"
+                                    viewBox="0 0 20 19"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M8.03841 11.4616L2.1719 8.79505C1.36454 8.42807 1.39898 7.2697 2.22673 6.95134L16.8999 1.30781C17.7087 0.996752 18.5033 1.79139 18.1922 2.60013L12.5487 17.2733C12.2303 18.1011 11.072 18.1355 10.705 17.3281L8.03841 11.4616ZM8.03841 11.4616L12.4231 7.07704"
+                                      stroke="#666666"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </span>
+                                <span>124</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="/" class="news-card__link button">
+                          <span class="icon icon--arrow">
+                            Читать
+                          </span>
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner container">
+        <div class="footer__body">
+          <nav class="footer__menu">
+            <div class="footer__menu-column">
+              <a href="/" class="footer__menu-main-link h6">Главная</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Особенности</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Блоги</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Ресурсы</a>
+                  <span class="badge">Новое</span>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Отзывы</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Связаться с нами</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Новости</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="/" class="footer__menu-main-link h6">Новости</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Популярные истории</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Избранные видео</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Технологии</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Здоровье</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Политика</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Сообщество</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="/" class="footer__menu-main-link h6">Блоги</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Квантовые вычисления</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Этика ИИ</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Исследования космоса</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Биотехнологии</a>
+                  <span class="badge">Новое</span>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link"
+                    >Возобновляемая энергия</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Биохакинг</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="/" class="footer__menu-main-link h6 h6">Подкасты</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Революция ИИ</a>
+                  <span class="badge">Новое</span>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Глубокое обучение</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Машинное обучение</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Беседы с ИИ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="/" class="footer__menu-main-link h6">Ресурсы</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link button">
+                    <span class="icon icon--arrow">Статьи</span>
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link button">
+                    <span class="icon icon--arrow">Электронные книги</span>
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link button">
+                    <span class="icon icon--arrow">Отчеты</span>
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link button">
+                    <span class="icon icon--arrow"
+                      >Исследовательские работы</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__extra">
+          <div class="footer__extra-menu">
+            <ul class="footer__extra-menu-list">
+              <li class="footer__extra-menu-item">
+                <a href="/" class="footer__extra-menu-link"
+                  >Условия и положения</a
+                >
+              </li>
+              <li class="footer__extra-menu-item">
+                <a href="/" class="footer__extra-menu-link"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__soc1als soc1als">
+            <ul class="soc1als__list">
+              <li class="soc1als__item">
+                <a
+                  href="/"
+                  class="soc1als__link"
+                  target="_blank"
+                  aria-label="Twitter"
+                  title="Twitter"
+                >
+                  <svg
+                    width="24"
+                    height="20"
+                    viewBox="0 0 24 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.0571 5.18114C21.0664 5.39235 21.0664 5.59395 21.0664 5.80515C21.0756 12.2084 16.3712 19.6004 7.76793 19.6004C5.23048 19.6004 2.73933 18.842 0.600098 17.4212C0.970528 17.4692 1.34096 17.4884 1.71139 17.4884C3.81358 17.4884 5.86021 16.7588 7.51789 15.4052C5.51756 15.3668 3.75802 14.0132 3.14681 12.0356C3.85063 12.1796 4.57296 12.1508 5.25826 11.9492C3.08198 11.5076 1.51691 9.52036 1.50765 7.20675C1.50765 7.18755 1.50765 7.16835 1.50765 7.14915C2.15591 7.52355 2.88751 7.73475 3.62837 7.75395C1.58174 6.33315 0.942746 3.50114 2.18369 1.28353C4.5637 4.31714 8.06427 6.15075 11.8241 6.35235C11.4445 4.67234 11.9631 2.90594 13.1762 1.71553C15.0561 -0.118073 18.0196 -0.0220723 19.7977 1.92673C20.8441 1.71553 21.8535 1.31233 22.7704 0.74593C22.4185 1.86913 21.6869 2.81954 20.7145 3.42434C21.6406 3.30914 22.5481 3.04994 23.4001 2.66594C22.7704 3.64514 21.9739 4.48994 21.0571 5.18114Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="soc1als__item">
+                <a
+                  href="/"
+                  class="soc1als__link"
+                  target="_blank"
+                  aria-label="Medium"
+                  title="Medium"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.2812 10.1897C11.2812 13.332 8.75578 15.8793 5.6407 15.8793C2.52561 15.8793 0 13.3314 0 10.1897C0 7.04806 2.52542 4.5 5.6407 4.5C8.75597 4.5 11.2812 7.04749 11.2812 10.1897Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.4688 10.1895C17.4688 13.1472 16.2061 15.5459 14.6485 15.5459C13.0908 15.5459 11.8281 13.1472 11.8281 10.1895C11.8281 7.2317 13.0906 4.83301 14.6483 4.83301C16.2059 4.83301 17.4686 7.23094 17.4686 10.1895"
+                      fill="white"
+                    />
+                    <path
+                      d="M19.9998 10.1901C19.9998 12.8396 19.5557 14.9887 19.0078 14.9887C18.4599 14.9887 18.0161 12.8402 18.0161 10.1901C18.0161 7.54014 18.4601 5.3916 19.0078 5.3916C19.5555 5.3916 19.9998 7.53994 19.9998 10.1901Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="soc1als__item">
+                <a
+                  href="/"
+                  class="soc1als__link"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  title="LinkedIn"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.8647 0.599609H2.13554C1.72832 0.599609 1.33777 0.761379 1.04982 1.04933C0.761867 1.33728 0.600098 1.72783 0.600098 2.13505V19.8642C0.600098 20.2714 0.761867 20.6619 1.04982 20.9499C1.33777 21.2378 1.72832 21.3996 2.13554 21.3996H19.8647C20.2719 21.3996 20.6624 21.2378 20.9504 20.9499C21.2383 20.6619 21.4001 20.2714 21.4001 19.8642V2.13505C21.4001 1.72783 21.2383 1.33728 20.9504 1.04933C20.6624 0.761379 20.2719 0.599609 19.8647 0.599609ZM6.79965 18.3186H3.67243V8.38516H6.79965V18.3186ZM5.23388 7.00861C4.87915 7.00661 4.53296 6.89958 4.239 6.70102C3.94504 6.50246 3.71649 6.22127 3.58219 5.89294C3.44789 5.56461 3.41386 5.20386 3.48439 4.8562C3.55492 4.50855 3.72686 4.18958 3.9785 3.93955C4.23014 3.68952 4.5502 3.51964 4.8983 3.45134C5.2464 3.38304 5.60693 3.41939 5.93439 3.5558C6.26185 3.6922 6.54156 3.92255 6.73823 4.21778C6.9349 4.51301 7.03971 4.85988 7.03943 5.21461C7.04278 5.45211 6.99827 5.68784 6.90857 5.90777C6.81887 6.1277 6.68582 6.32732 6.51733 6.49473C6.34884 6.66215 6.14837 6.79392 5.92787 6.88221C5.70736 6.97049 5.47134 7.01348 5.23388 7.00861ZM18.3263 18.3273H15.2005V12.9005C15.2005 11.3001 14.5202 10.8061 13.642 10.8061C12.7147 10.8061 11.8047 11.5052 11.8047 12.9409V18.3273H8.67743V8.39239H11.6848V9.76894H11.7252C12.0271 9.15794 13.0844 8.11361 14.6979 8.11361C16.4428 8.11361 18.3278 9.14928 18.3278 12.1826L18.3263 18.3273Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer__copyright">
+            © <time datetime="2024">2024</time> MetaTech. Все права защищены.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

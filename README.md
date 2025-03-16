@@ -43,7 +43,7 @@ Adaptive layout using HTML, preprocessor SCSS according to the BEM methodology a
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-You can also open an already running application using Pages - [MetaTech]()
+You can also open an already running application using Vercel - [MetaTech](https://metatech-amber.vercel.app/)
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
